@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dsm2018.viewpagerpractice.LoginActivity">
+
+    <ImageView
+        android:id="@+id/image_login_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/edit_login_id"
+        app:layout_constraintBottom_toTopOf="@id/edit_login_id"
+        android:layout_marginBottom="5dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_login_id"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        android:hint="아이디를 입력해주세요."
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_login_icon"
+        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintWidth_percent="0.7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/edit_login_id"
+        app:layout_constraintBottom_toTopOf="@id/edit_login_pw"
+        android:layout_marginBottom="5dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_login_pw"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        android:hint="비밀번호를 입력해주세요."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_login_id"
+        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintWidth_percent="0.7"
+        android:layout_marginTop="45dp"/>
+
+    <Button
+        android:id="@+id/button_login_login"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_login_pw"
+        android:layout_marginTop="50dp"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:background="@drawable/button"/>
+</android.support.constraint.ConstraintLayout>
