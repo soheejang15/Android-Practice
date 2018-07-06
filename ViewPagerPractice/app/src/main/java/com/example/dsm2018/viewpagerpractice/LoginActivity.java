@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         loginLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ( loginIdEdit.getText().toString().length() == 0 || loginPwEdit.getText().toString().length() == 0) {
+                if ( loginIdEdit.getText().toString().isEmpty() || loginPwEdit.getText().toString().isEmpty()) {
                     Toast.makeText(LoginActivity.this,"아이디 또는 비밀번호를 입력해주세요.",Toast.LENGTH_SHORT).show();
 
 
