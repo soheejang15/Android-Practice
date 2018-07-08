@@ -22,8 +22,43 @@
             android:text="GRAM"
             android:textColor="@android:color/white" />
     </android.support.v7.widget.Toolbar>
-
     
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/leftarrow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/view_main_view"
+        app:layout_constraintTop_toBottomOf="@id/Toorbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#0000000"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_main_view"
+        android:layout_width="260dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Toorbar" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/rightarrow"
+        app:layout_constraintLeft_toRightOf="@id/view_main_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Toorbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#0000000"
+        />
+
+
 
 
 </android.support.constraint.ConstraintLayout>
