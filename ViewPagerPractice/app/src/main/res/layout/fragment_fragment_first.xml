@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#ffffff">
-    
+
     <TextView
         android:id="@+id/text_first_gram"
         android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
         android:textSize="16dp"
         android:layout_marginBottom="150dp"
         />
-    
+
     <Button
         android:id="@+id/button_first_list"
         android:layout_width="0dp"
@@ -56,6 +56,6 @@
         app:layout_constraintTop_toBottomOf="@id/button_first_list"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="30dp"/>
-    
+
 
 </android.support.constraint.ConstraintLayout>
