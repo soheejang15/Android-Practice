@@ -7,7 +7,7 @@
     tools:context="com.example.dsm2018.viewpagerpractice.MainActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/Toorbar"
+        android:id="@+id/toolbar_main_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
@@ -20,6 +20,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:text="GRAM"
+            android:textSize="25dp"
             android:textColor="@android:color/white" />
     </android.support.v7.widget.Toolbar>
     
@@ -30,7 +31,7 @@
         android:src="@drawable/leftarrow"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/view_main_view"
-        app:layout_constraintTop_toBottomOf="@id/Toorbar"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main_toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#ffffff"
         />
@@ -42,11 +43,10 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Toorbar" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main_toolbar" />
 
     <ImageButton
         android:id="@+id/button_main_right"
@@ -55,7 +55,7 @@
         android:src="@drawable/rightarrow"
         app:layout_constraintLeft_toRightOf="@id/view_main_view"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Toorbar"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main_toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#ffffff"
         />
