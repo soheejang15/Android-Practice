@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
         <activity
             android:name=".ToolbarActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".ScrollviewActivity"></activity>
-        <activity android:name=".AdapterViewActivity">
-
-        </activity>
-        <activity android:name=".CustomAdapterViewActivity">
+        <activity android:name=".ScrollviewActivity" />
+        <activity android:name=".AdapterViewActivity" />
+        <activity android:name=".CustomAdapterViewActivity" />
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@style/Theme.MyDialog" />
+        <activity android:name=".RecyclerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
