@@ -72,3 +72,12 @@ public void onButtonClick(View view) {
 
 * 좀 더 간단하고 직관적인 방법
 * 그러나 코드의 역할 이슈(UI 구성은 XML, 이벤트 처리는 JAVA) 때문에 별로 사용하지 않는 방법
+
+
+# Touch-Click-LongClick의 관계
+
+### 버튼 Click 시
+Touch(down) → Touch(up) → Click 순으로 발생
+
+### 버튼 LongClick 시
+Touch(down) → LongClick → Touch(up) → Click 순으로 발생
