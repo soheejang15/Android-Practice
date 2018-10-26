@@ -1,6 +1,7 @@
 package com.example.dsm2018.thirdclass;
 
-public class Contact {
+public class
+Contact {
     private String name;
     private String phone;
 
