@@ -22,13 +22,17 @@
 })
  ```
 
+
+
  * 이벤트가 어디서 처리되는지 직관적으로 확인 가능
  * 코드의 간결성  
  → 가장 자주 사용되는 방법
  *  이벤트 소스 수가 증가하는 만큼 익명 클래스 객체를 생성
- * 
+ 
 
 ### 2. 익명클래스의 참조를 이벤트 리스너로 활용
+
+생성된 익명 클래스 객체를 모든 이벤트 소스의 이벤트로 사용하는 것. 각 이벤트 소스들에 대한 이벤트 처리코드가 이벤트 리스너 별로 구분되는 것이 아닌 이벤트 리스너 안의 핸들러 함수에서 구분됨.
  ```java
  View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -47,14 +51,24 @@
  ```
 
  * 매번 객체를 새로 만들지 않아도 됨
-* 이벤트 소스가 직관적이지 않음
+ * 이벤트가 어디서 처리되는지 직관적이지 않음
 
+### XML에서 View에 onClick 메서드 설정
+ XML에 View를 추가할 때 onClick 속성을 사용해 이벤트 핸들러 함수 지정. 지정한 핸들러 함수와 같은 이름의 함수를 멤버함수로 추가.
+``` xml
+<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickBtn"
+        android:text="click"
+        android:onClick="onButtonClick" />
+```
 
+```java
+public void onButtonClick(View view) { 
+     // Click Event
+     }   
+```
 
-## 이벤트 처리 용어
-|  <center>Header1</center> |  <center>Header2</center> | 
-|:----------|:----------:|
-|<center>**이벤트**<br>Event</center> | <center>**정해진 행위**<br>OnClick<br>OnKey<br>OnTouch</center> |
-|**<center>이벤트 소스**<br>Event Source</center> | <center>**이벤트가 발생하는 지점**<br></center> |
-|**이벤트 리스너**<br>Event Listener | <center> **각 이벤트를 처리할 메서드가 선언되어 있음**<br>![Alt text](캡처.jpg) </center> |
-|**이벤트 리스너**<br>Event Listener | <center> **각 이벤트를 처리할 메서드가 선언되어 있음**<br>![Alt text](캡처.jpg) </center> |
+* 좀 더 간단하고 직관적인 방법
+* 그러나 코드의 역할 이슈(UI 구성은 XML, 이벤트 처리는 JAVA) 때문에 별로 사용하지 않는 방법
